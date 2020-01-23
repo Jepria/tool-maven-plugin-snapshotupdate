@@ -1,4 +1,4 @@
-package com.technology.jep.maven.plugins.snapshotupdate;
+package org.jepria.mavenplugin.snapshotupdate;
 
 /*
  * Copyright 2001-2005 The Apache Software Foundation.
