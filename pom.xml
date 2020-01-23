@@ -99,14 +99,6 @@
                   <overWrite>true</overWrite>
                   <outputDirectory>${env.BIN_HOME}/build/org/jepria/mavenplugin/${project.artifactId}/${project.version}</outputDirectory>
                 </artifactItem>
-                <artifactItem>
-                  <groupId>${project.groupId}</groupId>
-                  <artifactId>${project.artifactId}</artifactId>
-                  <version>${project.version}</version>
-                  <type>${project.packaging}</type>
-                  <overWrite>true</overWrite>
-                  <outputDirectory>${env.BIN_HOME_GIT}/build/org/jepria/mavenplugin/${project.artifactId}/${project.version}</outputDirectory>
-                </artifactItem>
               </artifactItems>
             </configuration>
           </execution>
@@ -125,16 +117,8 @@
             </goals>
             <configuration>
               <overWrite>true</overWrite>
-              <fileSets>
-                <fileSet>
-                  <sourceFile>${project.basedir}/pom.xml</sourceFile>
-                  <destinationFile>${env.BIN_HOME}/build/org/jepria/mavenplugin/${project.artifactId}/${project.version}/${project.artifactId}-${project.version}.pom</destinationFile>
-                </fileSet>
-                <fileSet>
-                  <sourceFile>${project.basedir}/pom.xml</sourceFile>
-                  <destinationFile>${env.BIN_HOME_GIT}/build/org/jepria/mavenplugin/${project.artifactId}/${project.version}/${project.artifactId}-${project.version}.pom</destinationFile>
-                </fileSet>                
-              </fileSets>
+              <sourceFile>${project.basedir}/pom.xml</sourceFile>
+              <destinationFile>${env.BIN_HOME}/build/org/jepria/mavenplugin/${project.artifactId}/${project.version}/${project.artifactId}-${project.version}.pom</destinationFile>
             </configuration>
           </execution>
         </executions>
