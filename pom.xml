@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.jepria.mavenplugin</groupId>
+  <groupId>org.jepria.tools.mavenplugin</groupId>
   <artifactId>snapshotupdate-maven-plugin</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
@@ -97,7 +97,7 @@
                   <version>${project.version}</version>
                   <type>${project.packaging}</type>
                   <overWrite>true</overWrite>
-                  <outputDirectory>${env.BIN_HOME}/build/org/jepria/mavenplugin/${project.artifactId}/${project.version}</outputDirectory>
+                  <outputDirectory>${env.BIN_HOME}/build/org/jepria/tools/mavenplugin/${project.artifactId}/${project.version}</outputDirectory>
                 </artifactItem>
               </artifactItems>
             </configuration>
@@ -118,7 +118,7 @@
             <configuration>
               <overWrite>true</overWrite>
               <sourceFile>${project.basedir}/pom.xml</sourceFile>
-              <destinationFile>${env.BIN_HOME}/build/org/jepria/mavenplugin/${project.artifactId}/${project.version}/${project.artifactId}-${project.version}.pom</destinationFile>
+              <destinationFile>${env.BIN_HOME}/build/org/jepria/tools/mavenplugin/${project.artifactId}/${project.version}/${project.artifactId}-${project.version}.pom</destinationFile>
             </configuration>
           </execution>
         </executions>
